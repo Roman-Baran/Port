@@ -11,33 +11,244 @@
 
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--<i class='bx bx-menu'></i>-->
 </head>
 
 <body>
 
     <!-- header Design -->
     <header class="header">
-        <a herf="#" class="logo">Roman B.</a>
+        <a href="#" class="logo">Roman B.</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
         <nav class="navbar">
-            <a herf="#home">Home</a>
-            <a herf="#about">About</a>
-            <a herf="#education">Education</a>
-            <a herf="#skills">Skills</a>
-            <a herf="#contact">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Über Mich</a>
+            <a href="#education">Ausbildung</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Kontakt</a>
+
+            <span class="active-nav"></span>
         </nav>
     </header>
+
     <!-- home Sektion Design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hallo, Ich bin <span>Roman B.</span></h1>
+            <div class="text-animate">
+                <h3>Applikationsentwickler</h3>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat autem,
+                nihil facilis aliquam corrupti quas unde tenetur vel consequuntur.
+                Adipisc ipsum odit.
+            </p>
+            <div class="btn-box">
+                <a href="#" class="btn">Hier Ich</a>
+                <a href="#" class="btn">lass sprechen</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+        </div>
 
-    <!-- about Sektion Design -->
+        <div class="home-imgHover"></div>
+    </section>
+    <!-- Über mich Sektion Design -->
+    <section class="about" id="about">
+        <h2 class="heading">Über <span>mich</span></h2>
 
-    <!-- education Sektion Design -->
+        <div class="about-img">
+            <img src="images/test4.jpg" alt="">
+            <span class="circle-spin" id=""></span> <!--circle-spin-->
+        </div>
 
+        <div class="about-content">
+            <h3>Applikationsentwickler</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ipsam quasi odio! Odit alias aliquam
+                nisi architecto, optio ab officia.</p>
+            <div class="btn-box btns">
+                <a href="#" class="btn">Zurück</a>
+            </div>
+        </div>
+    </section>
+    <!-- Ausbildung Sektion Design -->
+    <section class="education" id="education">
+        <h2 class="heading">Meine <span>Ausbildung</span></h2>
+
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Ausbildung</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2023</div>
+                            <h3>Positiver Abschluss</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2021 - 2023</div>
+                            <h3>Lehre als Applikationsentwickler</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2019 - 2021</div>
+                            <h3>Krankenbruder</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2015 - 2000</div>
+                            <h3>Fussabtreter hoch 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-column">
+                <h3 class="title">Erfahrung</h3>
+
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2023</div>
+                            <h3>Arbeitsstelle als Fussabtreter</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque animi, consequatur odio necessitatibus excepturi sint sed consectetur distinctio rerum temporibus? Error eos commodi aperiam quia amet!</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>1988</div>
+                            <h3>Fussabtreter</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>1566</div>
+                            <h3>Arbeitsstelle als</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, provident.</p>
+                        </div>
+                    </div>
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i>2021 - 2023</div>
+                            <h3>Operationen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis ipsa explicabo doloremque aliquam placeat adipisci natus aspernatur, enim quas?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- skills Sektion Design -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Meine <span>Skills</span></h2>
 
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>HTML <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>C# <span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Web Design <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Web Development <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>SQL <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Mobile App Development <span>25%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- contact Sektion Design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Kontakt <span>Mich!</span></h2>
 
+    <form action="#">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Ihr Name" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Email Adresse" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="input-field">
+                <input type="tel" placeholder="Telefonnummer" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Thema" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+        <div class="textarea-field">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ihre Nachricht"required></textarea>
+            <span class="focus"></span>
+        </div>
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Senden</button>
+        </div>
+    </form>
+</section>
     <!-- footer Sektion Design -->
-
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by #Broxix | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
