@@ -274,6 +274,10 @@ span {
     border: .2rem solid var(--main-color);
 }
 /*----------------------------------------*/
+.circle-spin:hover{
+    box-shadow: 0rem 0rem 10rem var(--main-color);
+    background: transparent;
+}
 .about-img .circle-spin {
     position: absolute;
     top: 50%;
@@ -287,8 +291,7 @@ span {
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
     /* animation: spin 4s;  Drehanimation definiert, verliert aber position*/
-    animation: aboutSpinner 8s linear infinite;
-    box-shadow: 0rem 0rem 2rem var(--main-color);
+    animation: aboutSpinner 3s linear infinite;
 }
 /*-------------------------------------*/
 
@@ -306,8 +309,8 @@ span {
     margin: 2rem 0 3rem;
 }
 .btn-box .btns {
-display: inline-block;
-width: 15rem;
+    display: inline-block;
+    width: 15rem;
 }
 .btn-box .btns a::before {
     background: var(--second-bg-color);
@@ -437,6 +440,7 @@ width: 15rem;
 }
 .skills-box .skills-content:hover::before {
     width: 100%;
+    box-shadow: 10px 10px 10px var(--main-color);
 }
 .skills-content .progress {
     padding: 1rem 0;
@@ -491,7 +495,7 @@ width: 15rem;
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 25%;
+    width: 100%;
     box-shadow: 10px 10px 30px black;
 }
 .contact {
@@ -540,7 +544,7 @@ width: 15rem;
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);/*------------------*/
+    background: var(--second-bg-color);
     border-radius: .6rem;
     z-index: -1;
     transition: .5s;
