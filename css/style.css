@@ -467,35 +467,35 @@ span {
     background: var(--main-color);
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-    width: 80%;
+    width: 75%;     /*HTML*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-    width: 90%;
+    width: 60%;     /*CSS*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 70%;
+    width: 40%;     /*Javascript*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-    width: 85%;
+    width: 70%;     /*C#*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-    width: 80%;
+    width: 60%;     /*XML-JSON*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 90%;
+    width: 80%;     /*Netzwerktechnik*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-    width: 70%;
+    width: 70%;     /*SQL, MySQL*/
     box-shadow: 10px 10px 30px black;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-    width: 100%;
+    width: 100%;    /*Motivation*/
     box-shadow: 10px 10px 30px black;
 }
 .contact {
@@ -660,7 +660,7 @@ section:nth-child(odd) .animate.scroll,
 }
 /*Breakpoints*/
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     html {
         font-size: 55%;
     }
