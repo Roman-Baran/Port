@@ -89,7 +89,7 @@ section {
     width: 300px;
     background-color: var(--second-bg-color);
     border: 1px solid var(--main-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 2px var(--main-color);
     font-size: 16px;
     z-index: 1000;
     opacity: 0; /* Startet mit 0 Opazität (unsichtbar) */
