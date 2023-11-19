@@ -775,8 +775,8 @@ section:nth-child(odd) .animate.scroll,
     .home {
         padding: 0 4%;
     }
-    .footer {
-        padding: 2rem 4%; 
+   .footer {
+        flex-direction: column;
     }
 }
 
