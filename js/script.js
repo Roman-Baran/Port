@@ -45,18 +45,7 @@ let footer = document.querySelector('footer');
 
 footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
-/*
-const circleSpin = document.getElementById("circle-spin");
 
-let rotation = 0;
-
-function spin() {
-rotation += 1;
-circleSpin.style.transform = `rotate(${rotation}deg)`;
-requestAnimationFrame(spin);
-}
-requestAnimationFrame(spin);
-*/
 /*  --------------------TypeScript---------------------
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form') as HTMLFormElement;
@@ -75,88 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // fetch() oder AJAX-Bibliothek verwenden, um eine POST-Anfrage an das Backend zu senden.
         }
     });
-
-    function validateForm(name: string, email: string, phone: string, subject: string, message: string): boolean {
-        // Validierungslogik
-        // Überprüfe, Validierungskriterien entsprechen.
-        // true wenn das Formular gültig ist. Andernfalls Fehlermeldung-gib false zurück.
-
-        // Überprüfe, E-Mail-Adresse ein gültiges Format hat, reguläre Expression
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        if (!emailPattern.test(email)) {
-            alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-            return false;
-        }
-
-        //weitere Validierungsprüfungen für Name, Telefon, Betreff und Nachricht hinzu.
-
-        return true; // Formular ist gültig.
-    }
-}); 
-document.addEventListener('DOMContentLoaded', () => {
-    const contactForm = document.getElementById('contact-form');
-
-    contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-
-        if (validateForm(name, email, phone, subject, message)) {
-            // Formulardaten an Server
-            // fetch() oder AJAX-Bibliothek verwenden
-
-            // fetch():
-            fetch('server-endpunkt', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    name,
-                    email,
-                    phone,
-                    subject,
-                    message
-                })
-            })
-            .then(response => {
-                if (response.ok) {
-                    // erfolgreich gesendet
-                    alert('Vielen Dank für deine Nachricht.');
-                    contactForm.reset();
-                } else {
-                    // Fehler
-                    alert('Fehler beim Senden des Formulars. Bitte versuche es später erneut.');
-                }
-            })
-            .catch(error => {
-                console.error(error);
-                alert('Fehler beim Senden des Formulars. Bitte versuche es später erneut.');
-            });
-        }
-    });
-
-    function validateForm(name, email, phone, subject, message) {
-        // Hier Validierungslogik implementieren
-        // Überprüfe
-        // Gib true, wenn Formular gültig, Fehlermeldung = false
-
-        // E-Mail-Adresse ein gültiges Format? reguläre Expression
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        if (!emailPattern.test(email)) {
-            alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-            return false;
-        }
-
-        // Für weitere Validierungsprüfungen
-
-        return true; // Formular ist gültig.
-    }
-});*/
+*/
 
 const form = document.querySelector("form");
 const username = document.getElementById("username");
@@ -282,9 +190,9 @@ function showPopup(title, content) {
 function closePopup() {
     const popup = document.querySelector('.custom-popup');
     if (popup) {
-        popup.style.animation = 'fadeOut 1s forwards'; /* Fügt die Fade-Out-Animation hinzu */
+        popup.style.animation = 'fadeOut 1s forwards'; /* Fade-Out-Animation */
         setTimeout(() => {
             document.body.removeChild(popup);
-        }, 1000); /* Wartet 1 Sekunde, um die Fade-Out-Animation abzuschließen */
+        }, 1000); /* Wartet 1 Sekunde,Fade-Out-Animation */
     }
 }
